@@ -35,7 +35,7 @@ final class MywpAddSiteAutoApi {
       'document_url' => 'https://mywpcustomize.com/add_ons/my-wp-add-on-add-site-auto',
       'website_url' => 'https://mywpcustomize.com/',
       'github' => 'https://github.com/gqevu6bsiz/mywp_addon_add_site_auto',
-      'github_tags' => 'https://api.github.com/repos/gqevu6bsiz/mywp_addon_add-site-auto/tags',
+      'github_tags' => 'https://api.github.com/repos/gqevu6bsiz/mywp_addon_add_site_auto/tags',
     );
 
     $plugin_info = apply_filters( 'mywp_add_site_auto_plugin_info' , $plugin_info );
