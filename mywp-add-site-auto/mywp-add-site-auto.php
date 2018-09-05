@@ -3,12 +3,12 @@
 Plugin Name: My WP Add Site Auto
 Plugin URI: https://mywpcustomize.com/add_ons/my-wp-add-on-add-site-auto
 Description: My WP Add Site Auto is automatically add site from network admin.
-Version: 1.0.1
+Version: 1.1
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/
 Text Domain: mywp-add-site-auto
 Domain Path: /languages
-My WP Test working: 1.6
+My WP Test working: 1.7
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -51,7 +51,7 @@ final class MywpAddSiteAuto {
   private static function define_constants() {
 
     define( 'MYWP_ADD_SITE_AUTO_NAME' , 'My WP Add Site Auto' );
-    define( 'MYWP_ADD_SITE_AUTO_VERSION' , '1.0.1' );
+    define( 'MYWP_ADD_SITE_AUTO_VERSION' , '1.1' );
     define( 'MYWP_ADD_SITE_AUTO_PLUGIN_FILE' , __FILE__ );
     define( 'MYWP_ADD_SITE_AUTO_PLUGIN_BASENAME' , plugin_basename( MYWP_ADD_SITE_AUTO_PLUGIN_FILE ) );
     define( 'MYWP_ADD_SITE_AUTO_PLUGIN_DIRNAME' , dirname( MYWP_ADD_SITE_AUTO_PLUGIN_BASENAME ) );
@@ -94,8 +94,9 @@ final class MywpAddSiteAuto {
 
     $dir = MYWP_ADD_SITE_AUTO_PLUGIN_PATH . 'controller/modules/';
 
-    $includes['add_site_auto_main_general']   = $dir . 'mywp.controller.module.main.general.php';
-    $includes['add_site_auto_updater']        = $dir . 'mywp.controller.module.updater.php';
+    $includes['add_site_auto']               = $dir . 'mywp.controller.module.add-site-auto.php';
+    $includes['add_site_auto_main_general']  = $dir . 'mywp.controller.module.main.general.php';
+    $includes['add_site_auto_updater']       = $dir . 'mywp.controller.module.updater.php';
 
     return $includes;
 

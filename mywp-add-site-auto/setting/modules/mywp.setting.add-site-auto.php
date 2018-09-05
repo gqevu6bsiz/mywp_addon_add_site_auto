@@ -54,7 +54,7 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
 
   public static function mywp_ajax() {
 
-    if( ! MywpApi::is_manager() ) {
+    if( ! MywpAddSiteAutoApi::is_network_manager() ) {
 
       return false;
 
@@ -78,14 +78,14 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
 
     check_ajax_referer( $action_name , $action_name );
 
-    if( ! MywpApi::is_manager() ) {
+    if( ! MywpAddSiteAutoApi::is_network_manager() ) {
 
       return false;
 
     }
 
-    delete_site_transient( 'add_site_auto_updater' );
-    delete_site_transient( 'add_site_auto_updater_remote' );
+    delete_site_transient( 'mywp_add_site_auto_updater' );
+    delete_site_transient( 'mywp_add_site_auto_updater_remote' );
 
     $is_latest = MywpControllerModuleAddSiteAutoUpdater::is_latest();
 
@@ -119,7 +119,7 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
 
     check_ajax_referer( $action_name , $action_name );
 
-    if( ! MywpApi::is_manager() ) {
+    if( ! MywpAddSiteAutoApi::is_network_manager() ) {
 
       return false;
 
@@ -202,7 +202,7 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
 
     check_ajax_referer( $action_name , $action_name );
 
-    if( ! MywpApi::is_manager() ) {
+    if( ! MywpAddSiteAutoApi::is_network_manager() ) {
 
       return false;
 
@@ -469,9 +469,9 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
           </td>
         </tr>
         <tr>
-          <th><?php _e( 'Document' , 'mywp-add-site-auto' ); ?></th>
+          <th><?php _e( 'Documents' , 'my-wp' ); ?></th>
           <td>
-            <a href="<?php echo esc_url( $plugin_info['document_url'] ); ?>" class="button button-secondary" target="_blank"><span class="dashicons dashicons-book"></span> <?php _e( 'Document' , 'mywp-add-site-auto' ); ?>
+            <a href="<?php echo esc_url( $plugin_info['document_url'] ); ?>" class="button button-secondary" target="_blank"><span class="dashicons dashicons-book"></span> <?php _e( 'Documents' , 'my-wp' ); ?>
           </td>
         </tr>
       </tbody>

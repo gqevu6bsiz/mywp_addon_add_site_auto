@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My WP Add-on Add Site Auto\n"
-"POT-Creation-Date: 2018-07-17 19:04+0900\n"
+"POT-Creation-Date: 2018-09-05 11:24+0900\n"
 "PO-Revision-Date: 2018-07-17 19:04+0900\n"
 "Last-Translator: gqevu6bsiz <gqevu6bsiz@gmail.com>\n"
 "Language-Team: gqevu6bsiz <gqevu6bsiz@gmail.com>\n"
@@ -16,24 +16,35 @@ msgstr ""
 "X-Poedit-WPHeader: mywp-add-site-auto.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: controller/modules/mywp.controller.module.main.general.php:97
+#: controller/modules/mywp.controller.module.main.general.php:89
 #: setting/modules/mywp.setting.add-site-auto.php:472
 #: setting/modules/mywp.setting.add-site-auto.php:474
-msgid "Document"
+msgid "Documents"
 msgstr ""
 
-#: controller/modules/mywp.controller.module.updater.php:103
-#: controller/modules/mywp.controller.module.updater.php:140
+#: controller/modules/mywp.controller.module.main.general.php:111
+msgid "Settings"
+msgstr ""
+
+#: controller/modules/mywp.controller.module.main.general.php:137
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a href=\"%2$s\" %3$s>View "
+"version %4$s details</a>."
+msgstr ""
+
+#: controller/modules/mywp.controller.module.updater.php:106
+#: controller/modules/mywp.controller.module.updater.php:143
 msgid "Connection lost or the server is busy. Please try again later."
 msgstr ""
 
-#: controller/modules/mywp.controller.module.updater.php:134
-#: controller/modules/mywp.controller.module.updater.php:150
+#: controller/modules/mywp.controller.module.updater.php:137
+#: controller/modules/mywp.controller.module.updater.php:153
 #: setting/modules/mywp.setting.add-site-auto.php:554
 #: setting/modules/mywp.setting.add-site-auto.php:588
 #: setting/modules/mywp.setting.add-site-auto.php:626
@@ -43,11 +54,11 @@ msgstr ""
 msgid "An error has occurred. Please reload the page and try again."
 msgstr ""
 
-#: controller/modules/mywp.controller.module.updater.php:184
+#: controller/modules/mywp.controller.module.updater.php:189
 msgid "Invalid remote Json data. Please try again in an hour."
 msgstr ""
 
-#: controller/modules/mywp.controller.module.updater.php:194
+#: controller/modules/mywp.controller.module.updater.php:199
 msgid "Invalid results. Sorry maybe update format changed."
 msgstr ""
 
@@ -84,6 +95,26 @@ msgstr ""
 msgid "Please enter a valid sites num."
 msgstr ""
 
+#: setting/modules/mywp.setting.add-site-auto.php:253
+msgid "An unexpected error occurred."
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:302
+msgid "There was an error creating the user."
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:363
+msgid "Site Address (URL)"
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:383
+msgid "Site Title"
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:393
+msgid "Admin Email"
+msgstr ""
+
 #: setting/modules/mywp.setting.add-site-auto.php:401
 msgid "Add site(s) num"
 msgstr ""
@@ -94,6 +125,16 @@ msgstr ""
 
 #: setting/modules/mywp.setting.add-site-auto.php:451
 msgid "Plugin info"
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:455
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:458
+#, php-format
+msgid "Get Version %s"
 msgstr ""
 
 #: setting/modules/mywp.setting.add-site-auto.php:464

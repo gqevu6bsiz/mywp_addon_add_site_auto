@@ -18,11 +18,11 @@ final class MywpControllerModuleAddSiteAutoMainGeneral extends MywpControllerAbs
 
   protected static function after_init() {
 
-    add_filter( 'mywp_controller_model_' . self::$id , array( __CLASS__ , 'mywp_controller_model' ) );
+    add_filter( 'mywp_controller_pre_get_model_' . self::$id , array( __CLASS__ , 'mywp_controller_pre_get_model' ) );
 
   }
 
-  public static function mywp_controller_model( $pre_model ) {
+  public static function mywp_controller_pre_get_model( $pre_model ) {
 
     $pre_model = true;
 
@@ -32,7 +32,7 @@ final class MywpControllerModuleAddSiteAutoMainGeneral extends MywpControllerAbs
 
   public static function mywp_wp_loaded() {
 
-    if( ! is_admin() ) {
+    if( ! is_network_admin() ) {
 
       return false;
 
@@ -66,15 +66,7 @@ final class MywpControllerModuleAddSiteAutoMainGeneral extends MywpControllerAbs
 
     add_filter( 'plugin_row_meta' , array( __CLASS__ , 'plugin_row_meta' ) , 10 , 4 );
 
-    if( is_multisite() ) {
-
-      add_filter( 'network_admin_plugin_action_links_' . MYWP_ADD_SITE_AUTO_PLUGIN_BASENAME , array( __CLASS__ , 'plugin_action_links' ) , 10 , 4 );
-
-    } else {
-
-      add_filter( 'plugin_action_links_' . MYWP_ADD_SITE_AUTO_PLUGIN_BASENAME , array( __CLASS__ , 'plugin_action_links' ) , 10 , 4 );
-
-    }
+    add_filter( 'network_admin_plugin_action_links_' . MYWP_ADD_SITE_AUTO_PLUGIN_BASENAME , array( __CLASS__ , 'plugin_action_links' ) , 10 , 4 );
 
     add_action( 'in_plugin_update_message-' . MYWP_ADD_SITE_AUTO_PLUGIN_BASENAME , array( __CLASS__ , 'in_plugin_update_message' ) , 10 , 2 );
 
@@ -94,7 +86,7 @@ final class MywpControllerModuleAddSiteAutoMainGeneral extends MywpControllerAbs
 
     if( ! empty( $plugin_info['document_url'] ) ) {
 
-      $plugin_meta[] =  sprintf( '<a href="%1$s" target="_blank">%2$s</a>' , esc_url( $plugin_info['document_url'] ) , __( 'Document' , 'mywp-add-site-auto' ) );
+      $plugin_meta[] =  sprintf( '<a href="%1$s" target="_blank">%2$s</a>' , esc_url( $plugin_info['document_url'] ) , __( 'Documents' , 'my-wp' ) );
 
     }
 

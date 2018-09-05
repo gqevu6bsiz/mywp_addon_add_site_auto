@@ -44,6 +44,18 @@ final class MywpAddSiteAutoApi {
 
   }
 
+  public static function is_network_manager() {
+
+    if( method_exists( 'MywpApi' , 'is_network_manager' ) ) {
+
+      return MywpApi::is_network_manager();
+
+    }
+
+    return MywpApi::is_manager();
+
+  }
+
 }
 
 endif;
