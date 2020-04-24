@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: My WP Add-on Add Site Auto\n"
-"POT-Creation-Date: 2018-09-05 11:24+0900\n"
+"POT-Creation-Date: 2020-04-24 14:41+0900\n"
 "PO-Revision-Date: 2018-07-17 19:04+0900\n"
 "Last-Translator: gqevu6bsiz <gqevu6bsiz@gmail.com>\n"
 "Language-Team: gqevu6bsiz <gqevu6bsiz@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: mywp-add-site-auto.php\n"
@@ -22,8 +22,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: controller/modules/mywp.controller.module.main.general.php:89
-#: setting/modules/mywp.setting.add-site-auto.php:472
-#: setting/modules/mywp.setting.add-site-auto.php:474
+#: setting/modules/mywp.setting.add-site-auto.php:466
+#: setting/modules/mywp.setting.add-site-auto.php:468
 msgid "Documents"
 msgstr ""
 
@@ -45,12 +45,12 @@ msgstr ""
 
 #: controller/modules/mywp.controller.module.updater.php:137
 #: controller/modules/mywp.controller.module.updater.php:153
-#: setting/modules/mywp.setting.add-site-auto.php:554
-#: setting/modules/mywp.setting.add-site-auto.php:588
-#: setting/modules/mywp.setting.add-site-auto.php:626
-#: setting/modules/mywp.setting.add-site-auto.php:668
-#: setting/modules/mywp.setting.add-site-auto.php:709
-#: setting/modules/mywp.setting.add-site-auto.php:733
+#: setting/modules/mywp.setting.add-site-auto.php:548
+#: setting/modules/mywp.setting.add-site-auto.php:582
+#: setting/modules/mywp.setting.add-site-auto.php:620
+#: setting/modules/mywp.setting.add-site-auto.php:662
+#: setting/modules/mywp.setting.add-site-auto.php:703
+#: setting/modules/mywp.setting.add-site-auto.php:727
 msgid "An error has occurred. Please reload the page and try again."
 msgstr ""
 
@@ -64,84 +64,89 @@ msgstr ""
 
 #: setting/modules/mywp.setting.add-site-auto.php:26
 #: setting/modules/mywp.setting.add-site-auto.php:42
-#: setting/modules/mywp.setting.add-site-auto.php:357
+#: setting/modules/mywp.setting.add-site-auto.php:351
 msgid "Add Site Auto"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:104
-#: setting/modules/mywp.setting.add-site-auto.php:459
+#: setting/modules/mywp.setting.add-site-auto.php:98
+#: setting/modules/mywp.setting.add-site-auto.php:453
 msgid "Using a latest version."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:132
-#: setting/modules/mywp.setting.add-site-auto.php:215
+#: setting/modules/mywp.setting.add-site-auto.php:126
+#: setting/modules/mywp.setting.add-site-auto.php:209
 msgid "Please enter a valid blog url."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:140
-#: setting/modules/mywp.setting.add-site-auto.php:223
+#: setting/modules/mywp.setting.add-site-auto.php:134
+#: setting/modules/mywp.setting.add-site-auto.php:217
 msgid "Please enter a valid blog title."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:148
-#: setting/modules/mywp.setting.add-site-auto.php:156
-#: setting/modules/mywp.setting.add-site-auto.php:231
-#: setting/modules/mywp.setting.add-site-auto.php:239
+#: setting/modules/mywp.setting.add-site-auto.php:142
+#: setting/modules/mywp.setting.add-site-auto.php:150
+#: setting/modules/mywp.setting.add-site-auto.php:225
+#: setting/modules/mywp.setting.add-site-auto.php:233
 msgid "Please enter a valid admin email."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:162
-#: setting/modules/mywp.setting.add-site-auto.php:170
+#: setting/modules/mywp.setting.add-site-auto.php:156
+#: setting/modules/mywp.setting.add-site-auto.php:164
 msgid "Please enter a valid sites num."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:253
+#: setting/modules/mywp.setting.add-site-auto.php:247
 msgid "An unexpected error occurred."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:302
+#: setting/modules/mywp.setting.add-site-auto.php:296
 msgid "There was an error creating the user."
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:363
+#: setting/modules/mywp.setting.add-site-auto.php:357
 msgid "Site Address (URL)"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:383
+#: setting/modules/mywp.setting.add-site-auto.php:377
 msgid "Site Title"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:393
+#: setting/modules/mywp.setting.add-site-auto.php:382
+#, php-format
+msgid "%s code is replace to new blog id."
+msgstr ""
+
+#: setting/modules/mywp.setting.add-site-auto.php:387
 msgid "Admin Email"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:401
+#: setting/modules/mywp.setting.add-site-auto.php:395
 msgid "Add site(s) num"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:410
-msgid "Add Sites"
+#: setting/modules/mywp.setting.add-site-auto.php:404
+msgid "Do Add Sites"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:451
+#: setting/modules/mywp.setting.add-site-auto.php:445
 msgid "Plugin info"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:455
+#: setting/modules/mywp.setting.add-site-auto.php:449
 #, php-format
 msgid "Version %s"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:458
+#: setting/modules/mywp.setting.add-site-auto.php:452
 #, php-format
 msgid "Get Version %s"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:464
+#: setting/modules/mywp.setting.add-site-auto.php:458
 msgid "Check latest"
 msgstr ""
 
-#: setting/modules/mywp.setting.add-site-auto.php:466
+#: setting/modules/mywp.setting.add-site-auto.php:460
 msgid "Check latest version"
 msgstr ""
 

@@ -52,13 +52,7 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
 
   }
 
-  public static function mywp_ajax() {
-
-    if( ! MywpAddSiteAutoApi::is_network_manager() ) {
-
-      return false;
-
-    }
+  public static function mywp_ajax_network_manager() {
 
     add_action( 'wp_ajax_' . MywpSetting::get_ajax_action_name( self::$id , 'check_latest' ) , array( __CLASS__ , 'check_latest' ) );
     add_action( 'wp_ajax_' . MywpSetting::get_ajax_action_name( self::$id , 'validate_add_site_auto' ) , array( __CLASS__ , 'validate_add_site_auto' ) );
@@ -375,7 +369,7 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
 
               <?php endif; ?>
               <br />
-              <code>###next_blog_id###</code>
+              <?php printf( __( '%s code is replace to new blog id.' , 'mywp-add-site-auto' ) , '<code>###next_blog_id###</code>' ); ?>
             </td>
           </tr>
           <tr>
@@ -385,7 +379,7 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
             <td>
               <input type="text" class="large-text blog_title" id="blog_title" placeholder="<?php echo esc_attr( 'Site ###next_blog_id###' ); ?>" value="<?php echo esc_attr( 'Site ###next_blog_id###' ); ?>" />
               <br />
-              <code>###next_blog_id###</code>
+              <?php printf( __( '%s code is replace to new blog id.' , 'mywp-add-site-auto' ) , '<code>###next_blog_id###</code>' ); ?>
             </td>
           </tr>
           <tr>
@@ -401,13 +395,13 @@ final class MywpSettingScreenAddSiteAuto extends MywpAbstractSettingModule {
               <?php _e( 'Add site(s) num' , 'mywp-add-site-auto' ); ?>
             </th>
             <td>
-              <input type="number" class="small-text sites_num" id="sites_num" placeholder="<?php echo esc_attr( 100 ); ?>" value="<?php echo esc_attr( 100 ); ?>" />
+              <input type="number" class="small-text sites_num" id="sites_num" placeholder="<?php echo esc_attr( 10 ); ?>" value="<?php echo esc_attr( 10 ); ?>" />
             </td>
           </tr>
         </tbody>
       </table>
       <p class="submit">
-        <input type="button" class="button button-primary" value="<?php echo esc_attr( __( 'Add Sites' , 'mywp-add-site-auto' ) ); ?>" id="do-add-site-auto" />
+        <input type="button" class="button button-primary" value="<?php echo esc_attr( __( 'Do Add Sites' , 'mywp-add-site-auto' ) ); ?>" id="do-add-site-auto" />
         <span class="spinner"></span>
       </p>
     </div>
